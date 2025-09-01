@@ -24,9 +24,10 @@ public class Course {
             throw new IllegalArgumentException("Số tín chỉ phải lớn hơn 0.");
         }
 		this.credit = credit;
+		this.title = title;
 		this.department = department;
 		this.id = id;
-		this.title = title;
+		this.department = department;
 	}
 	//Constructor mac dinh
 	public Course() {
