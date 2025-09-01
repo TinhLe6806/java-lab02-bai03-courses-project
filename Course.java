@@ -13,7 +13,7 @@ public class Course {
 	private String title;
 	public int length;
 	//Constructor day du
-	public Course(int credit, String department, String id, String title) {
+	public Course(int credit, String title, String id, String department) {
         if (id == null || id.length() < 3 || !id.matches("[a-zA-Z0-9]+")) {
             throw new IllegalArgumentException("Mã khóa học không hợp lệ.");
         }
@@ -23,11 +23,6 @@ public class Course {
         if (credit <= 0) {
             throw new IllegalArgumentException("Số tín chỉ phải lớn hơn 0.");
         }
-        this.id = id;
-        this.title = title;
-        this.credit = credit;
-        this.department = department;
-
 		this.credit = credit;
 		this.department = department;
 		this.id = id;
